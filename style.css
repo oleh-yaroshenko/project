@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    font-weight: normal;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    list-style: none;
+    vertical-align: baseline;
+    background: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+/* нижче будуть стилі секції modal */
+
+
+
+/* нижче будуть стилі секції timer */
+
+
+
+/* нижче будуть стилі секції header */
+
+
+
+/* нижче будуть стилі секції editions */
+
+
+
+/* нижче будуть стилі секції controller */
+
+
+
+/* нижче будуть стилі секції trailer */
+
+
+
+/* нижче будуть стилі секції series */
+
+
+
+/* нижче будуть стилі секції news */
+
+
+
+/* нижче будуть стилі секції faq + footer */
+
