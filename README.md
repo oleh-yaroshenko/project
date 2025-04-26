@@ -9,7 +9,7 @@
 Розробник - Марк (isaev24102011@gmail.com)  
 Розробник - Міша (fff650625@gmail.com)  
 Розробник - Макар (makar2009on@gmail.com)  
-Розробник - Назар (asagacka@gmail.com)
+Розробник - Назар (asagacka@gmail.com) 
 
 ## Figma
 
@@ -17,7 +17,7 @@
 
 ## Trello
 
-Посилання на нашу трелло дошку, там скрам мастер буде висатвляти всім задачі щодо проєкту: https://trello.com/b/7Pc4wKjC/project-3
+Посилання на нашу трелло дошку, там скрам мастер буде висатвляти всім задачі щодо проєкту: https://trello.com/b/7Pc4wKjC/project-3 
 
 ## Шпаргалка GitHub
 
