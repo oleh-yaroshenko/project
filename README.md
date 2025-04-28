@@ -4,12 +4,12 @@
 
 ## Учасники
 
-Тім лід - Олег (oleg21062010@gmail.com)  
-Скрам мастер - Даша (d.remen2009@gmail.com)  
-Розробник - Марк (isaev24102011@gmail.com)  
-Розробник - Міша (fff650625@gmail.com)  
-Розробник - Макар (makar2009on@gmail.com)  
-Розробник - Назар (asagacka@gmail.com)
+Тім лід - Олег (oleg21062010@gmail.com) (секції: timer, modal)  
+Скрам мастер - Даша (d.remen2009@gmail.com) (секція: news)  
+Розробник - Марк (isaev24102011@gmail.com) (секція: series)  
+Розробник - Міша (fff650625@gmail.com) (секції: trailer, faq + footer)  
+Розробник - Макар (makar2009on@gmail.com) (секції: editions, controller)  
+Розробник - Назар (asagacka@gmail.com) (секція: header)
 
 ## Figma
 
