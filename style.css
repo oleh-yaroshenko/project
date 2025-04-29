@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
@@ -39,7 +38,95 @@ body {
 
 
 /* нижче будуть стилі секції editions (секція Макара) */
-
+.editions_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .editions_title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .editions_card-edition{
+    text-align: center;
+    color: white;
+  }
+  .editions_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .editions_card {
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .editions_card-img {
+    
+  }
+  
+  .editions_card-content{
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .editions_card-platform {
+    color: #A9C7C7;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .editions_card-content-ul {
+    margin-bottom: 70px;
+    margin-top: 30px;
+    list-style-type: disc;
+    padding-left: 10px;
+    color: #cccccc;
+    row-gap: 20px;
+  }
+  
+  .editions_card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .editions_card-price {
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    
+  }
+  
+  .editions_card-btn {
+    background-color: #b084f6;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .editions_card-btn:hover {
+    background-color: #9e6de0;
+  }
+  .editions_card-content-ul-li{
+    padding-bottom: 10px;
+  }
 
 
 /* нижче будуть стилі секції controller (секція Макара) */
