@@ -11,8 +11,50 @@
 
 <body>
     <div class="modal">
-        <span>lorem</span>
         <!-- тут буде код секції modal (секція Олега) -->
+        <div class="modal-backdrop">
+            <form class="modal-form">
+                <button class="modal-form-close">
+                    <img src="assets/icons/modal-crossmark.svg" alt="" class="modal-form-close-img">
+                </button>
+                <h3 class="modal-form-title">God of war ragnarok</h3>
+                <h4 class="modal-form-subtitle">Standard edition</h4>
+                <div class="modal-form-input">
+                    <label for="modal-cardnumber" class="modal-form-input-label">Credit card:</label>
+                    <input id="modal-cardnumber" type="number" class="modal-form-input-field"
+                        placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="modal-form-wrapper">
+                    <div class="modal-form-wrapper-input">
+                        <label for="modal-date" class="modal-form-wrapper-input-label">Expire:</label>
+                        <input id="modal-date" type="text" class="modal-form-wrapper-input-field" placeholder="MM/YY">
+                    </div>
+                    <div class="modal-form-wrapper-input">
+                        <label for="modal-cvv" class="modal-form-wrapper-input-label">CCV:</label>
+                        <input id="modal-cvv" type="password" class="modal-form-wrapper-input-field" placeholder="***">
+                    </div>
+                </div>
+                <div class="modal-form-input">
+                    <label for="modal-name" class="modal-form-input-label">Instant:</label>
+                    <input id="modal-name" type="text" class="modal-form-input-field" placeholder="John Doe">
+                </div>
+                <label class="modal-form-check">
+                    <input type="checkbox" class="modal-form-check-input">
+                    <span class="modal-form-check-fakebox"></span>
+                    <span class="modal-form-check-span">I agree with the <span
+                            class="modal-form-check-span-highlight">rules</span> of the site</span>
+                </label>
+                <p class="modal-form-descr">Download of this product is subject to the PlayStation Network Terms of
+                    Service and our Software Usage Terms plus any specific additional conditions applying to this
+                    product. If you do not wish to accept these terms, do not download this product. See Terms of
+                    Service for more important information.</p>
+                <div class="modal-form-price">
+                    <span class="modal-form-price-span">Your total sum:</span>
+                    <span class="modal-form-price-amount">19.99$</span>
+                </div>
+                <button type="submit" class="modal-form-btn">Buy now</button>
+            </form>
+        </div>
     </div>
     <header class="header">
         <div class="timer">
