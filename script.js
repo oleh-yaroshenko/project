@@ -7,6 +7,14 @@
 
 
 // нижче буде код секції header (щоб було бургер меню) (секція Назара)
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('open');
+  }
+  
+  function buyNow() {
+    alert("Redirecting to purchase...");
+  }
+  
 
 
 
