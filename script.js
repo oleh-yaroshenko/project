@@ -42,9 +42,58 @@ modalNameInput.addEventListener('input', () => {
     modalNameInput.value = value;
 });
 
+const modalBackdrop = document.querySelector(".modal-backdrop")
+const modalPriceSpan = document.querySelector(".modal-form-price-amount")
+const modalClose = document.querySelector(".modal-form-close")
+const modalOpenBtns = document.querySelectorAll(".modal-open")
+
+modalOpenBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        const price = button.getAttribute('data-modal-price');
+        modalPriceSpan.textContent = `${price}$`;
+        modalBackdrop.classList.remove('hidden');
+    });
+});
+
+modalClose.addEventListener('click', () => {
+    modalBackdrop.classList.add('hidden');
+});
+
 // нижче буде код секції timer (щоб був таймер в реальному часі) (секція Олега)
 
+const timerDays = document.getElementById('modal-days');
+const timerHours = document.getElementById('modal-hours');
+const timerMinutes = document.getElementById('modal-minutes');
+const timerSeconds = document.getElementById('modal-seconds');
 
+const timerDate = new Date('2025-05-20T00:00:00');
+
+function updateTimer() {
+    const now = new Date();
+    const diff = timerDate - now;
+
+    if (diff <= 0) {
+        timerDays.textContent = '0';
+        timerHours.textContent = '0';
+        timerMinutes.textContent = '0';
+        timerSeconds.textContent = '0';
+        clearInterval(timerInterval);
+        return;
+    }
+
+    const seconds = Math.floor(diff / 1000) % 60;
+    const minutes = Math.floor(diff / 1000 / 60) % 60;
+    const hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const days = Math.floor(diff / 1000 / 60 / 60 / 24);
+
+    timerDays.textContent = String(days).padStart(2, '0');
+    timerHours.textContent = String(hours).padStart(2, '0');
+    timerMinutes.textContent = String(minutes).padStart(2, '0');
+    timerSeconds.textContent = String(seconds).padStart(2, '0');
+}
+
+const timerInterval = setInterval(updateTimer, 1000);
+updateTimer();
 
 // нижче буде код секції header (щоб було бургер меню) (секція Назара)
 

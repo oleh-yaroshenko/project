@@ -12,7 +12,7 @@
 <body>
     <div class="modal">
         <!-- тут буде код секції modal (секція Олега) -->
-        <div class="modal-backdrop">
+        <div class="modal-backdrop hidden">
             <form class="modal-form">
                 <button class="modal-form-close">
                     <img src="assets/icons/modal-crossmark.svg" alt="" class="modal-form-close-img">
@@ -27,7 +27,8 @@
                 <div class="modal-form-wrapper">
                     <div class="modal-form-wrapper-input">
                         <label for="modal-date" class="modal-form-wrapper-input-label">Expire:</label>
-                        <input id="modal-date" type="text" maxlength="5" class="modal-form-wrapper-input-field" placeholder="MM/YY">
+                        <input id="modal-date" type="text" maxlength="5" class="modal-form-wrapper-input-field"
+                            placeholder="MM/YY">
                     </div>
                     <div class="modal-form-wrapper-input">
                         <label for="modal-cvv" class="modal-form-wrapper-input-label">CCV:</label>
@@ -59,7 +60,18 @@
     <header class="header">
         <div class="timer">
             <!-- тут буде код секції timer (секція Олега) -->
+            <h2 class="timer-title">Realease:</h2>
+            <div class="timer-numbers">
+                <span class="timer-numbers-span" id="modal-days">00</span>
+                <span class="timer-numbers-span" id="modal-hours">00</span>
+                <span class="timer-numbers-span" id="modal-minutes">00</span>
+                <span class="timer-numbers-span" id="modal-seconds">00</span>
+            </div>
         </div>
+        <!-- <div class="card">
+            <span class="card-price">19.99$</span>
+            <button class="card-btn modal-open" data-modal-price="19.99">Buy</button>
+        </div> -->
         <!-- тут буде код секції header (секція Назара) -->
     </header>
     <main class="main">

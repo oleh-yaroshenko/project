@@ -27,16 +27,47 @@ body {
 
 /* нижче будуть стилі секції modal (секція Олега) */
 
+/* .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-price {
+    font-size: 36px;
+    color: #d9d9d9;
+    font-weight: 700;
+}
+
+.card-btn {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background: #8856d9;
+    font-size: 36px;
+    font-weight: 700;
+    color: #d9d9d9;
+} */
+
 .modal-backdrop {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background: hsla(206, 11%, 12%, 0.50);
+    background: hsla(206, 11%, 12%, 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    transition: .3s;
+    opacity: 1;
+    pointer-events: auto;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .modal-form {
@@ -220,7 +251,75 @@ body {
 
 /* нижче будуть стилі секції timer (секція Олега) */
 
+.timer {
+    position: absolute;
+    top: 36px;
+    right: 226px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.timer-title {
+    color: #8c96a0;
+}
+
+.timer-numbers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timer-numbers-span {
+    font-weight: 700;
+    font-size: 40px;
+    color: #a9c7c7;
+    position: relative;
+
+    &:nth-child(1)::after {
+        content: "D";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(2)::after {
+        content: "H";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(3)::after {
+        content: "M";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(4)::after {
+        content: "S";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+}
 
 /* нижче будуть стилі секції header (секція Назара) */
 
