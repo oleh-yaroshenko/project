@@ -46,10 +46,64 @@ body {
 
 
 
-/* нижче будуть стилі секції trailer (секція Міші) */
+/* нижче будуть стилі секції trailer (секція Міші) */ 
 
 
+  
+  .trailer-hero-section {
+    position: relative;
+    width: 1920px;
+    height: 944.31px;
+    background-image: url('/project/assets/images/trailer-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .trailer-hero-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+  }
+  
+  .trailer-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-left: 50px;
+  }
+  
+  .trailer-hero-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 39px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    margin-top: 67px;
+    
+  }
+  
+  .trailer-play-button {
+    padding: 9.3px 33.83px;
+    font-size: 15px;        
+    background-color: #30373F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+  }
+  
 
+  
 /* нижче будуть стилі секції series (секція Марка) */
 
 
