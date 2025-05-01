@@ -38,6 +38,9 @@ body {
 
 
 /* нижче будуть стилі секції editions (секція Макара) */
+.editions{
+  background: #1C2023;
+}
 .editions_container{
     max-width: 1200px;
     margin: 0 auto;
@@ -48,6 +51,7 @@ body {
   .editions_title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: white;
   }
   .editions_card-edition{
     text-align: center;
@@ -118,7 +122,6 @@ body {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease;
   }
   
   .editions_card-btn:hover {
@@ -130,6 +133,88 @@ body {
 
 
 /* нижче будуть стилі секції controller (секція Макара) */
+.controller{
+  background: #1C2023;
+}
+.controller-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.controller_textarea {
+  flex: 1;
+  min-width: 300px;
+}
+
+.controller_h1 {
+  font-size: 40px;
+  margin-bottom: 66px;
+  margin-left: 450px;
+  color: white;
+}
+
+.controller_p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-left: 100px;
+  line-height: 26px;
+  color: #A9C7C7;
+}
+
+.controller_span {
+  color: #8856D9;
+  font-weight: bold;
+}
+
+.controller_span2 {
+  color: #FF4136;
+  font-weight: bold;
+}
+
+.controller_price-buy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.controller_price {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 100px;
+  color: white;
+}
+
+.controller_buy-button {
+  background-color: #FF4136;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.controller_img {
+  max-width: 300px;
+  border-radius: 12px;
+  margin-right: 200px;
+  margin-top: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
 
 
 
