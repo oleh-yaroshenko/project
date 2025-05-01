@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
@@ -52,7 +51,198 @@ body {
 
 /* нижче будуть стилі секції series (секція Марка) */
 
+.series {
+    background: #1C2023;
+    padding: 88px 0 160px;
+}
 
+.series-toggle-container {
+    margin-top: 32px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.series-toggle-option {
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #30373f;
+    transition: .3s;
+}
+
+.series-toggle-option.series-active {
+    color: #FFFFFF;
+}
+
+.series-toggle-switch {
+    position: relative;
+    width: 54px;
+    height: 26px;
+    background-color: #30373F;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.series-toggle-switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: #8856D9;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.series-toggle-switch.series-active .series-toggle-switch-handle {
+    left: 32px;
+}
+
+.series-explore {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.series-here {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.series-img-boy {
+    height: 450px;
+    width: 414px;
+}
+
+.series-img-boy-2 {
+    width: 318px;
+    height: 420px;
+}
+
+.series-boy-img-box {
+    margin-left: 100px;
+}
+
+.series-boy {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    padding-top: 22px;
+}
+
+.series-boy-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 2.4;
+}
+
+.series-boy-text-span {
+    color: #8856D9;
+}
+
+.series-boy-text-p1,
+.series-boy-text-p2,
+.series-boy-text-p3,
+.series-boy-text-p4,
+.series-boy-text-p5,
+.series-boy-text-p6,
+.series-boy-text-p7,
+.series-boy-text-p8,
+.series-boy-text-p9,
+.series-boy-text-p10,
+.series-boy-text-p11,
+.series-boy-text-p12,
+.series-boy-text-p13,
+.series-boy-text-p14 {
+    color: #FFFFFF;
+}
+
+.series-boy-button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    background: #FF4136;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 28px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.series-boy-text-box {
+    display: flex;
+}
+
+.series-rectangle-man {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.series-span {
+    margin-top: 114px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.series-toggle-container1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.series-toggle-option1 {
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #30373f;
+    transition: .3s;
+}
+
+.series-toggle-option1.series-active1 {
+    color: #FFFFFF;
+}
+
+.series-toggle-switch1 {
+    position: relative;
+    width: 54px;
+    height: 26px;
+    background-color: #30373F;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.series-toggle-switch-handle1 {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: #8856D9;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.series-toggle-switch1.series-active1 .series-toggle-switch-handle1 {
+    left: 32px;
+}
 
 /* нижче будуть стилі секції news (секція Даші) */
 
