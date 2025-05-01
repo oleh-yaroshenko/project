@@ -50,25 +50,26 @@ body {
 
 
 /* нижче будуть стилі секції series (секція Марка) */
-.series{
+
+.series {
     background: #1C2023;
+    padding: 88px 0 160px;
 }
 
 .series-toggle-container {
-    margin-top: 5%;
+    margin-top: 32px;
     display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
 }
 
 .series-toggle-option {
-    padding: 8px 16px;
+    padding: 0 16px;
+    font-size: 14px;
     cursor: pointer;
-    color: #555;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    color: #30373f;
+    transition: .3s;
 }
 
 .series-toggle-option.series-active {
@@ -77,180 +78,141 @@ body {
 
 .series-toggle-switch {
     position: relative;
-    width: 60px;
-    height: 30px;
+    width: 54px;
+    height: 26px;
     background-color: #30373F;
-    border-radius: 15px;
-    margin: 0 10px;
+    border-radius: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: .3s;
 }
 
 .series-toggle-switch-handle {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
     background-color: #8856D9;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: .3s;
 }
-
 
 .series-toggle-switch.series-active .series-toggle-switch-handle {
-    left: 33px;
+    left: 32px;
 }
 
-.series-explore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Rubik";
+.series-explore {
+    text-align: center;
     font-weight: 600;
     font-size: 40px;
-    line-height: 100%;
     color: #FFFFFF;
 }
-.series-here{
-    margin-top: 3%;
+
+.series-here {
+    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Rubik";
     font-weight: 500;
     font-size: 18px;
-    line-height: 100%;
     color: #FFFFFF;
 }
 
-.series-img-boy{
+.series-img-boy {
     height: 450px;
     width: 414px;
-    position: relative;
-}
-.series-img-boy-2{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 25%;
-    top: 46vh;
-    border-radius: 12px;
-    opacity: 10%;
-    z-index: -1;
 }
 
-.series-boy-img-box{
+.series-img-boy-2 {
+    width: 318px;
+    height: 420px;
+}
+
+.series-boy-img-box {
     margin-left: 100px;
 }
 
-.series-boy{
+.series-boy {
     justify-content: center;
     display: flex;
-    gap: 0px;
+    align-items: center;
+    gap: 46px;
+    padding-top: 22px;
 }
 
-.series-boy-text{
-    margin-top: 100px;
+.series-boy-text {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: start;
+    line-height: 2.4;
 }
 
-.series-bpy-text-span{
+.series-boy-text-span {
     color: #8856D9;
 }
-.series-boy-text-p1{
-    color: #FFFFFF;
-}
-.series-boy-text-p2{
-    color: #FFFFFF;
-}
-.series-boy-text-p3{
-    color: #FFFFFF;
-}
-.series-boy-text-p4{
-    color: #FFFFFF;
-}
-.series-boy-text-p5{
-    color: #FFFFFF;
-}
-.series-boy-text-p6{
-    color: #FFFFFF;
-}
-.series-boy-text-p7{
-    color: #FFFFFF;
-}
-.series-boy-text-p8{
-    color: #FFFFFF;
-}
-.series-boy-text-p9{
-    color: #FFFFFF;
-}
-.series-boy-text-p10{
-    color: #FFFFFF;
-}
-.series-boy-text-p11{
-    color: #FFFFFF;
-}
-.series-boy-text-p12{
-    color: #FFFFFF;
-}
-.series-boy-text-p13{
-    color: #FFFFFF;
-}
-.series-boy-text-p14{
+
+.series-boy-text-p1,
+.series-boy-text-p2,
+.series-boy-text-p3,
+.series-boy-text-p4,
+.series-boy-text-p5,
+.series-boy-text-p6,
+.series-boy-text-p7,
+.series-boy-text-p8,
+.series-boy-text-p9,
+.series-boy-text-p10,
+.series-boy-text-p11,
+.series-boy-text-p12,
+.series-boy-text-p13,
+.series-boy-text-p14 {
     color: #FFFFFF;
 }
 
-.series-boy-button{
-    width: 100px;
-    height: 30px;
+.series-boy-button {
+    padding: 8px 18px;
     border-radius: 6px;
-    border: none;
     background: #FF4136;
     color: #FFFFFF;
-    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 28px;
     cursor: pointer;
-    transition: all .3s;
+    transition: .3s;
 }
 
-.series-boy-button:hover{
-    background: #f7635b;
-}
-
-.series-boy-text-box{
+.series-boy-text-box {
     display: flex;
 }
 
-.series-rectangle-man{
-    margin: 0 auto;
+.series-rectangle-man {
     justify-content: center;
+    align-items: center;
     display: flex;
-    gap: 0px;
+    gap: 40px;
 }
 
-
-
-
-
+.series-span {
+    margin-top: 114px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
 
 .series-toggle-container1 {
-    margin-top: 5%;
-    display: flex;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
 }
 
 .series-toggle-option1 {
-    padding: 8px 16px;
+    padding: 0 16px;
+    font-size: 14px;
     cursor: pointer;
-    color: #555;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    color: #30373f;
+    transition: .3s;
 }
 
 .series-toggle-option1.series-active1 {
@@ -259,33 +221,28 @@ body {
 
 .series-toggle-switch1 {
     position: relative;
-    width: 60px;
-    height: 30px;
+    width: 54px;
+    height: 26px;
     background-color: #30373F;
-    border-radius: 15px;
-    margin: 0 10px;
+    border-radius: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: .3s;
 }
 
 .series-toggle-switch-handle1 {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
     background-color: #8856D9;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: .3s;
 }
-
 
 .series-toggle-switch1.series-active1 .series-toggle-switch-handle1 {
-    left: 33px;
+    left: 32px;
 }
-
-
 
 /* нижче будуть стилі секції news (секція Даші) */
 
