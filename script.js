@@ -15,55 +15,55 @@
 
 
 // нижче буде код секції series (щоб працювали switch оператори і мінявся текст 2 секцій відповідно) (секція Марка)
-const toggleSwitch = document.getElementById('toggleSwitch');
-const minOption = document.getElementById('minOption');
-const recOption = document.getElementById('recOption');
-const body = document.body;
+const seriestoggleSwitch = document.getElementById('series-toggleSwitch');
+const seriesminOption = document.getElementById('series-minOption');
+const seriesrecOption = document.getElementById('series-recOption');
+const seriesbody = document.body;
 
-let isActive = false;
+let seriesisActive = false;
 
-function toggleState() {
-    isActive = !isActive;
+function seriestoggleState() {
+    seriesisActive = !seriesisActive;
     
     // Update switch appearance
-    toggleSwitch.classList.toggle('active', isActive);
+    seriestoggleSwitch.classList.toggle('series-active', seriesisActive);
     
     // Update option styles
-    minOption.classList.toggle('active', !isActive);
-    recOption.classList.toggle('active', isActive);
+    seriesminOption.classList.toggle('series-active', !seriesisActive);
+    seriesrecOption.classList.toggle('series-active', seriesisActive);
     
     // Change body background color
-        let rectangleP1 = document.querySelector(`.boy-text-p1`)
-        let rectangleP3 = document.querySelector(`.boy-text-p3`)
-        let rectangleP4 = document.querySelector(`.boy-text-p4`)
-        let rectangleP8 = document.querySelector(`.boy-text-p8`)
-    if (isActive) {
-        rectangleP1.textContent = `: Intel i5-2500k or AMD Ryzen 5 1200`
-        rectangleP3.textContent = `: Windows 11 64-bit`
-        rectangleP4.textContent = `: NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)`
-        rectangleP8.textContent = `: 6 GB`
+        let seriesrectangleP1 = document.querySelector(`.series-boy-text-p1`)
+        let seriesrectangleP3 = document.querySelector(`.series-boy-text-p3`)
+        let seriesrectangleP4 = document.querySelector(`.series-boy-text-p4`)
+        let seriesrectangleP8 = document.querySelector(`.series-boy-text-p8`)
+    if (seriesisActive) {
+        seriesrectangleP1.textContent = `: Intel i5-2500k or AMD Ryzen 5 1200`
+        seriesrectangleP3.textContent = `: Windows 11 64-bit`
+        seriesrectangleP4.textContent = `: NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)`
+        seriesrectangleP8.textContent = `: 6 GB`
     } else {
-        rectangleP1.textContent = `: Intel i5-2500k or AMD Ryzen 3 1200`
-        rectangleP3.textContent = `: Windows 10 64-bit`
-        rectangleP4.textContent = `: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)`
-        rectangleP8.textContent = `: 4 GB`
+        seriesrectangleP1.textContent = `: Intel i5-2500k or AMD Ryzen 3 1200`
+        seriesrectangleP3.textContent = `: Windows 10 64-bit`
+        seriesrectangleP4.textContent = `: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)`
+        seriesrectangleP8.textContent = `: 4 GB`
     }
 }
 
 
 // Add click event to the switch
-toggleSwitch.addEventListener('click', toggleState);
+seriestoggleSwitch.addEventListener('click', seriestoggleState);
 
 // Add click events to options
-minOption.addEventListener('click', () => {
-    if (isActive) {
-        toggleState();
+seriesminOption.addEventListener('click', () => {
+    if (seriesisActive) {
+        seriestoggleState();
     }
 });
 
-recOption.addEventListener('click', () => {
-    if (!isActive) {
-        toggleState();
+seriesrecOption.addEventListener('click', () => {
+    if (!seriesisActive) {
+        seriestoggleState();
     }
 });
 
@@ -72,52 +72,52 @@ recOption.addEventListener('click', () => {
 
 
 
-const toggleSwitch1 = document.getElementById('toggleSwitch1');
-const minOption1 = document.getElementById('minOption1');
-const recOption1 = document.getElementById('recOption1');
-const body1 = document.body;
+const seriestoggleSwitch1 = document.getElementById('series-toggleSwitch1');
+const seriesminOption1 = document.getElementById('series-minOption1');
+const seriesrecOption1 = document.getElementById('series-recOption1');
+const seriesbody1 = document.body;
 
-let isActive1 = false;
+let seriesisActive1 = false;
 
-function toggleState1() {
-    isActive1 = !isActive1;
+function seriestoggleState1() {
+    seriesisActive1 = !seriesisActive1;
     
     // Update switch appearance
-    toggleSwitch1.classList.toggle('active1', isActive1);
+    seriestoggleSwitch1.classList.toggle('series-active1', seriesisActive1);
     
     // Update option styles
-    minOption1.classList.toggle('active1', !isActive1);
-    recOption1.classList.toggle('active1', isActive1);
+    seriesminOption1.classList.toggle('series-active1', !seriesisActive1);
+    seriesrecOption1.classList.toggle('series-active1', seriesisActive1);
     
     // Change body background color
-        let rectangleP9 = document.querySelector(`.boy-text-p9`)
-        let rectangleP13 = document.querySelector(`.boy-text-p13`)
-        let rectangleP14 = document.querySelector(`.boy-text-p14`)
-    if (isActive1) {
-        rectangleP9.textContent = `: PS4, PS5`
-        rectangleP13.textContent = `: English, Polish, Russian`
-        rectangleP14.textContent = `: English, Dutch, Polish, Russian, Turkish`
+        let seriesrectangleP9 = document.querySelector(`.series-boy-text-p9`)
+        let seriesrectangleP13 = document.querySelector(`.series-boy-text-p13`)
+        let seriesrectangleP14 = document.querySelector(`.series-boy-text-p14`)
+    if (seriesisActive1) {
+        seriesrectangleP9.textContent = `: PS4, PS5`
+        seriesrectangleP13.textContent = `: English, Polish, Russian`
+        seriesrectangleP14.textContent = `: English, Dutch, Polish, Russian, Turkish`
     } else {
-        rectangleP9.textContent = `: PS4`
-        rectangleP13.textContent = `: English`
-        rectangleP14.textContent = `: English`
+        seriesrectangleP9.textContent = `: PS4`
+        seriesrectangleP13.textContent = `: English`
+        seriesrectangleP14.textContent = `: English`
     }
 }
 
 
 // Add click event to the switch
-toggleSwitch1.addEventListener('click', toggleState1);
+seriestoggleSwitch1.addEventListener('click', seriestoggleState1);
 
 // Add click events to options
-minOption1.addEventListener('click', () => {
-    if (isActive1) {
-        toggleState1();
+seriesminOption1.addEventListener('click', () => {
+    if (seriesisActive1) {
+        seriestoggleState1();
     }
 });
 
-recOption1.addEventListener('click', () => {
-    if (!isActive1) {
-        toggleState1();
+seriesrecOption1.addEventListener('click', () => {
+    if (!seriesisActive1) {
+        seriestoggleState1();
     }
 });
 
