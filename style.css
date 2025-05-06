@@ -134,7 +134,7 @@ body {
 
 /* нижче будуть стилі секції controller (секція Макара) */
 .controller{
-  background: #1C2023;
+  background: #1C2023; 
 }
 .controller-content {
   display: flex;
