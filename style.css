@@ -58,14 +58,16 @@ body {
   nav {
     position: fixed;
     top: 0;
-    left: -200px;
-    width: 200px;
-    height: 100%;
+    left: 0;
+    width: 100%;
     background: #222;
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    transition: left 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
     z-index: 1000;
   }
   
@@ -82,8 +84,10 @@ body {
     color: #a084f9;
   }
   
-  nav.open {
-    left: 0;
+ nav.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
   
   main {
@@ -91,13 +95,15 @@ body {
   }
   
   h1 {
-    font-size: 48px;
+    font-size: 100px;
+    color: white;
     margin-bottom: 10px;
   }
   
   h1 span {
-    color: #a084f9;
+    color: white;
   }
+  
   
   p {
     margin-bottom: 20px;
