@@ -19,4 +19,18 @@
 
 
 // нижче буде код секції news (щоб працював слайдер) (секція Даші)
+let currentIndex = 0;
+  const track = document.getElementById("sliderTrack");
+  const cardWidth = 320;
+  const totalCards = track.children.length;
+  const visibleCards = 3;
+  const maxIndex = totalCards - visibleCards;
+
+  function moveSlider(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
 
