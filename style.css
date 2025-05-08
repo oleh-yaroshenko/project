@@ -246,6 +246,133 @@ body {
 
 /* нижче будуть стилі секції news (секція Даші) */
 
+.news {
+    background: #1C2023;
+    padding: 0 0 108px;
+    overflow: hidden;
+}
 
+.news-h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.news-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-track-wrapper {
+    overflow: hidden;
+}
+
+.news-track {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.news-card {
+    background: linear-gradient(to bottom, #30373F, #252A2E);
+    border-radius: 6px;
+    width: calc((100% - 80px)/5);
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.news-card span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #8856D9;
+    padding-bottom: 8px;
+}
+
+.news-card h3 {
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.news-card-wrapper {
+    gap: 24px;
+    display: flex;
+    align-items: stretch;
+}
+
+.news-card-wrapper img {
+    width: 278px;
+    height: 248px;
+    border-radius: 8px;
+}
+
+.news-card-wrapper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-card-wrapper-text p {
+    font-size: 12px;
+    color: #D9D9D9;
+    line-height: 17px;
+    width: 273px;
+}
+
+.news-card-wrapper-text button {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 6px;
+    background: #8C96A0;
+    cursor: pointer;
+    padding: 8px 30px;
+    align-self: end;
+}
+
+.news-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #8c96a0;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.prev {
+    padding: 8px 9px 8px 7px;
+    left: 20px;
+}
+
+.prev:hover {
+    background: #8856D9;
+}
+
+.next {
+    padding: 8px 7px 8px 9px;
+    right: 20px;
+}
+
+.next:hover {
+    background: #8856D9;
+}
 
 /* нижче будуть стилі секції faq + footer (секція Міші) */

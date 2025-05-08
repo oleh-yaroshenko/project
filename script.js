@@ -103,3 +103,37 @@ seriesrecOption1.addEventListener('click', () => {
 
 // нижче буде код секції news (щоб працював слайдер) (секція Даші)
 
+const newsTrack = document.querySelector('.news-track');
+const newsCards = document.querySelectorAll('.news-card');
+const newsPrevBtn = document.querySelector('.prev');
+const newsNextBtn = document.querySelector('.next');
+
+let newsCurrentIndex = 0;
+const newsCardsPerView = 3;
+const newsTotalCards = newsCards.length;
+
+function newsUpdateSlider() {
+  const cardWidth = newsCards[0].offsetWidth + 20;
+  newsTrack.style.transform = `translateX(-${newsCurrentIndex * cardWidth}px)`;
+}
+
+newsNextBtn.addEventListener('click', () => {
+  if (newsCurrentIndex < newsTotalCards - newsCardsPerView) {
+    newsCurrentIndex++;
+  } else {
+    newsCurrentIndex = 0;
+  }
+  newsUpdateSlider();
+});
+
+newsPrevBtn.addEventListener('click', () => {
+  if (newsCurrentIndex > 0) {
+    newsCurrentIndex--;
+  } else {
+    newsCurrentIndex = newsTotalCards - newsCardsPerView - 2;
+  }
+  newsUpdateSlider();
+});
+
+window.addEventListener('resize', newsUpdateSlider);
+window.addEventListener('load', newsUpdateSlider);
