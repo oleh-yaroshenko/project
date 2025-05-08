@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
@@ -66,8 +66,8 @@ body {
   .trailer-hero-section::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 944.31px;
     background-color: #1C2023; 
     z-index: -1;
   }
@@ -81,29 +81,103 @@ body {
   
   .trailer-hero-title {
     font-family: 'Rubik', sans-serif;
+    width: 404px;
+    height: 38.81px;
+    font-size: 50px;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 39px;
     letter-spacing: 0;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
     margin-top: 67px;
+    margin-right: 70px;
     
   }
   
   .trailer-play-button {
-    padding: 9.3px 33.83px;
+    padding: 7px 30px;
     font-size: 15px;        
     background-color: #30373F;
     color: #FFFFFF;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     position: relative;
-    top: 5px;
+    top: -75px;
+    right: 25px;
+    font-weight: 600;
   }
-  
+.video-overlay{
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+  width:  1920px;
+  height: 944.31px;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.video-overlay iframe{
+  width:  1920px;
+  height: 944.31px;
+  border: none;
+}
 
-  
+
+.faq-section {
+  background-color: #1C2023;
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+
+.faq-title {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 2px solid #8d5af5;
+  margin-bottom: 20px;
+}
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px 0;
+  position: relative;
+}
+.faq-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C96A0;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+
+}
+.faq-toggle svg {
+  pointer-events: none;
+
+}
+.faq-content {
+  display: none;
+  padding: 10px 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+
 /* нижче будуть стилі секції series (секція Марка) */
 
 
