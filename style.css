@@ -50,7 +50,8 @@ body {
   }
   
   .editions_title {
-    font-size: 2.5rem;
+    font-size: 40px;
+    font-weight: 600;
     margin-bottom: 2rem;
     color: white;
     margin-left: 855px;
@@ -68,14 +69,15 @@ body {
   }
   
   .editions_card {
-    background-color: #1e1e1e;
+    background: linear-gradient(
+    180deg,
+    rgba(20, 22, 21, 1) 0%,
+    rgba(28, 32, 35, 1) 100%
+  );
     border-radius: 10px;
-    overflow: hidden;
     width: 450px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    
   }
   
   .editions_card-img {
@@ -157,6 +159,7 @@ body {
 
 .controller_h1 {
   font-size: 40px;
+  font-weight: 600;
   margin-bottom: 66px;
   margin-left: 450px;
   color: white;
