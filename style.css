@@ -38,192 +38,184 @@ body {
 
 
 /* нижче будуть стилі секції editions (секція Макара) */
-.editions{
-  background: #1C2023;
+
+.editions {
+    background: #1C2023;
+    padding: 52px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.editions_container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    margin-right: 520px;
-  }
-  
-  .editions_title {
+
+.editions_title {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 2rem;
     color: white;
-    margin-left: 855px;
-  }
-  .editions_card-edition{
-    text-align: center;
-    color: white;
-  }
-  .editions_cards {
-    width: 1500px;
+}
+
+.editions_container {
+    margin: 0 420px;
+}
+
+.editions_cards {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-  }
-  
-  .editions_card {
-    background: linear-gradient(
-    180deg,
-    rgba(20, 22, 21, 1) 0%,
-    rgba(28, 32, 35, 1) 100%
-  );
-    border-radius: 10px;
-    width: 450px;
+    gap: 16px;
+}
+
+.editions_card {
+    background: linear-gradient(180deg, #141615 0%, #1c2023 100%);
+    border-radius: 6px;
+    flex: 1 1 33%;
     display: flex;
     flex-direction: column;
-  }
-  
-  .editions_card-img {
-    width: 400px;
-    margin-left: 25px;
-    margin-top: 20px;
-  }
-  
-  .editions_card-content{
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .editions_card-platform {
-    color: #A9C7C7;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .editions_card-content-ul {
-    margin-bottom: 70px;
-    margin-top: 30px;
-    list-style-type: disc;
-    padding-left: 10px;
-    color: #cccccc;
-    row-gap: 20px;
-  }
-  
-  .editions_card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .editions_card-price {
-    position: relative;
-    left: 355px;
-    bottom: 50px;
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    
-  }
-  
-  .editions_card-btn {
-    background-color: #b084f6;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
- 
-  .editions_card-content-ul-li{
-    padding-bottom: 10px;
-  }
+    padding: 16px;
+}
 
+.editions_card-img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.editions_card-edition {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding: 20px 0 16px;
+}
+
+.editions_card-platform {
+    color: #A9C7C7;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.editions_card-content-ul {
+    list-style-type: disc;
+    color: #8c96a0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.editions_card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 14px;
+}
+
+.editions_card-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.editions_card-btn {
+    font-size: 14px;
+    font-weight: 500;
+    background: #8856d9;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 /* нижче будуть стилі секції controller (секція Макара) */
-.controller{
-  background: #1C2023; 
-}
-.controller-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  gap: 32px;
-}
 
-.controller_textarea {
-  flex: 1;
-  min-width: 300px;
+.controller {
+    background: #1C2023;
+    padding: 54px 0 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .controller_h1 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 66px;
-  margin-left: 450px;
-  color: white;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.controller-content {
+    display: flex;
+    align-items: center;
+    gap: 152px;
+}
+
+.controller_textarea {
+    width: 426px;
 }
 
 .controller_p {
-  font-size: 16px;
-  margin-bottom: 16px;
-  margin-left: 100px;
-  line-height: 26px;
-  color: #A9C7C7;
+    font-size: 18px;
+    line-height: 27px;
+    color: #A9C7C7;
+    padding-bottom: 22px;
 }
 
 .controller_span {
-  color: #8856D9;
-  font-weight: bold;
+    color: #8856D9;
+    font-weight: bold;
 }
 
 .controller_span2 {
-  color: #FF4136;
-  font-weight: bold;
+    color: #FF4136;
+    font-weight: bold;
 }
 
 .controller_price-buy {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 4px;
 }
 
 .controller_price {
-  font-size: 28px;
-  font-weight: bold;
-  margin-left: 100px;
-  color: white;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
 }
 
 .controller_buy-button {
-  background-color: #FF4136;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 14px;
+    background-color: #FF4136;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .controller_img {
-  max-width: 300px;
-  border-radius: 12px;
-  margin-right: 200px;
-  margin-top: 40px;
-  animation: float 3s ease-in-out infinite; 
+    width: 340px;
+    height: 309px;
+    transform: translateY(10px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.controller_img img {
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
-
-
-
 
 /* нижче будуть стилі секції trailer (секція Міші) */
 
