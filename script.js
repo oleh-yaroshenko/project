@@ -19,38 +19,38 @@
 
 
 // нижче буде код секції news (щоб працював слайдер) (секція Даші)
-const track = document.querySelector('.slider-track');
-const cards = document.querySelectorAll('.news-card');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
 
-let currentIndex = 0;
-const cardsPerView = 3;
-const totalCards = cards.length;
+const newsTrack = document.querySelector('.news-track');
+const newsCards = document.querySelectorAll('.news-card');
+const newsPrevBtn = document.querySelector('.prev');
+const newsNextBtn = document.querySelector('.next');
 
-function updateSlider() {
-  const cardWidth = cards[0].offsetWidth + 20; 
-  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+let newsCurrentIndex = 0;
+const newsCardsPerView = 3;
+const newsTotalCards = newsCards.length;
+
+function newsUpdateSlider() {
+  const cardWidth = newsCards[0].offsetWidth + 20;
+  newsTrack.style.transform = `translateX(-${newsCurrentIndex * cardWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
-  if (currentIndex < totalCards - cardsPerView) {
-    currentIndex++;
+newsNextBtn.addEventListener('click', () => {
+  if (newsCurrentIndex < newsTotalCards - newsCardsPerView) {
+    newsCurrentIndex++;
   } else {
-    currentIndex = 0;
+    newsCurrentIndex = 0;
   }
-  updateSlider();
+  newsUpdateSlider();
 });
 
-prevBtn.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
+newsPrevBtn.addEventListener('click', () => {
+  if (newsCurrentIndex > 0) {
+    newsCurrentIndex--;
   } else {
-    currentIndex = totalCards - cardsPerView;
+    newsCurrentIndex = newsTotalCards - newsCardsPerView - 2;
   }
-  updateSlider();
+  newsUpdateSlider();
 });
 
-window.addEventListener('resize', updateSlider);
-window.addEventListener('load', updateSlider);
-
+window.addEventListener('resize', newsUpdateSlider);
+window.addEventListener('load', newsUpdateSlider);

@@ -55,156 +55,134 @@ body {
 
 
 /* нижче будуть стилі секції news (секція Даші) */
+
 .news {
     background: #1C2023;
-    padding: 40px 0;
+    padding: 0 0 108px;
     overflow: hidden;
-  }
-  
-  .news-h2 {
+}
+
+.news-h2 {
     font-size: 40px;
     color: white;
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .slider-container {
-    position: relative;
-    max-width: 1800px;
-    margin: 0 auto;
-  }
-  
-  .slider-track-wrapper {
+    font-weight: 600;
+}
+
+.news-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-track-wrapper {
     overflow: hidden;
-  }
-  
-  .slider-track {
+}
+
+.news-track {
     display: flex;
     gap: 20px;
-    transition: transform 0.5s ease;
-  }
-  
-  .news-card {
-    background: linear-gradient(to bottom, #30373F, #2c2c2e);
-    border-radius: 12px;
-    width: 590px;
-    height: 347px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.news-card {
+    background: linear-gradient(to bottom, #30373F, #252A2E);
+    border-radius: 6px;
+    width: calc((100% - 80px)/5);
     padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-  }
-  
-  
-  .news-card-content {
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-  .news-card-content span {
+    align-items: start;
+}
+
+.news-card span {
     font-size: 10px;
     font-weight: 600;
-    margin-bottom: 5px;
-    margin-top: -335px;
-    margin-left: 10px;
     color: #8856D9;
-    font-weight: 600;
-  }
-  
-  .news-card-content h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+
+.news-card h3 {
     font-weight: 600;
     color: white;
-    font-size: 19px;
-    margin-left: 10px;
-  
-  }
-  
-  .news-card-content p {
-    position: relative;
-    font-size: 13px;
-    color: #D9D9D9;
-  height: 258px;
-  width: 256px;
-  line-height: 17px;
-  font-weight: 400;
-  margin-left: 300px;
-  top: 15px;
-  }
-  
-  .news-card img {
-    margin-top: 90px;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.news-card-wrapper {
+    gap: 24px;
+    display: flex;
+    align-items: stretch;
+}
+
+.news-card-wrapper img {
     width: 278px;
-    margin-left: 10px;
-    height: 249px;
+    height: 248px;
     border-radius: 8px;
-  position: relative;
-  top: -30px;
-  }
-  
-  .news-btn {
+}
+
+.news-card-wrapper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-card-wrapper-text p {
+    font-size: 12px;
+    color: #D9D9D9;
+    line-height: 17px;
+    width: 273px;
+}
+
+.news-card-wrapper-text button {
     font-size: 14px;
-    height: 32px;
-    width: 96px;
     font-weight: 500;
     color: white;
     border-radius: 6px;
     background: #8C96A0;
-    border: none;
     cursor: pointer;
-    align-self: flex-end;
-    margin-top: -30px;
-  }
-  
-  .slider-btn {
+    padding: 8px 30px;
+    align-self: end;
+}
+
+.news-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(100, 100, 100, 0.2);
-    border: none;
+    background: #8c96a0;
     cursor: pointer;
     z-index: 2;
     border-radius: 6px;
     padding: 8px;
-  }
-  
-  .slider-btn img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .prev {
-    left: -40px;
-    width: 32px;
-    height: 32px;
-    background: #8C96A0;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-  }
-  .prev:hover{
-    background: #8856D9;
+}
 
-  }
-  
-  .next {
-    width: 32px;
-    height: 32px;
-    background: #8C96A0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: -40px;
-  }
-  .next:hover{
-    background: #8856D9;
+.news-btn img {
+    width: 16px;
+    height: 16px;
+}
 
-  }
-  
+.prev {
+    padding: 8px 9px 8px 7px;
+    left: 20px;
+}
+
+.prev:hover {
+    background: #8856D9;
+}
+
+.next {
+    padding: 8px 7px 8px 9px;
+    right: 20px;
+}
+
+.next:hover {
+    background: #8856D9;
+}
 
 /* нижче будуть стилі секції faq + footer (секція Міші) */
