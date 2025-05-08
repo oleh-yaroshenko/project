@@ -19,18 +19,38 @@
 
 
 // нижче буде код секції news (щоб працював слайдер) (секція Даші)
+const track = document.querySelector('.slider-track');
+const cards = document.querySelectorAll('.news-card');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
 let currentIndex = 0;
-  const track = document.getElementById("sliderTrack");
-  const cardWidth = 320;
-  const totalCards = track.children.length;
-  const visibleCards = 3;
-  const maxIndex = totalCards - visibleCards;
+const cardsPerView = 3;
+const totalCards = cards.length;
 
-  function moveSlider(direction) {
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex > maxIndex) currentIndex = maxIndex;
+function updateSlider() {
+  const cardWidth = cards[0].offsetWidth + 20; 
+  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
 
-    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < totalCards - cardsPerView) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
   }
+  updateSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalCards - cardsPerView;
+  }
+  updateSlider();
+});
+
+window.addEventListener('resize', updateSlider);
+window.addEventListener('load', updateSlider);
 

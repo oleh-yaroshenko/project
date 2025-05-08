@@ -57,230 +57,154 @@ body {
 /* нижче будуть стилі секції news (секція Даші) */
 .news {
     background: #1C2023;
- 
-
-}
-.news-h2 {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  
+  .news-h2 {
     font-size: 40px;
     color: white;
-    margin-left: 906px;
-}
-.news-first-card {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  
+  .slider-track-wrapper {
+    overflow: hidden;
+  }
+  
+  .slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  .news-card {
+    background: linear-gradient(to bottom, #30373F, #2c2c2e);
+    border-radius: 12px;
+    width: 590px;
+    height: 347px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  
+  .news-card-content {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .news-card-content span {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: -335px;
     margin-left: 10px;
-    margin-top: 30px;
-    width: 590px;
-    height: 347px;
-    background: #30373F;
-    border-radius: 6px;
-}
-.news-first-card-god-of-war {
-    position: absolute;
-    margin-top: 13px;
-    margin-left: 20px;
     color: #8856D9;
-    font-size: 10px;
     font-weight: 600;
-}
-.news-first-card-name {
+  }
+  
+  .news-card-content h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
     font-weight: 600;
-    position: absolute;
     color: white;
     font-size: 19px;
-    margin-left: 20px;
-    margin-top: 40px;
-}
-.news-first-card-img {
-    width: 278px;
-    height: 249px;
-    border-radius: 5px;
+    margin-left: 10px;
+  
+  }
+  
+  .news-card-content p {
+    position: relative;
+    font-size: 13px;
+    color: #D9D9D9;
+  height: 258px;
+  width: 256px;
+  line-height: 17px;
+  font-weight: 400;
+  margin-left: 300px;
+  top: 15px;
+  }
+  
+  .news-card img {
     margin-top: 90px;
-    margin-left: 20px;
-
-}
-.news-first-card-date {
-    font-size: 10px;
-    color: #8C96A0;
-    margin-left: 530px;
-    margin-top: -330px;
-}
-.news-first-card-text {
-    font-size: 12px;
-    color: #D9D9D9;
-    margin-top: 70px;
-    height: 208px;
-    width: 256px;
-    line-height: 17px;
-    font-weight: 400;
-    margin-left: 320px;
-}
-.news-first-card-btn {
-    font-size: 13px;
-    height: 30px;
+    width: 278px;
+    margin-left: 10px;
+    height: 249px;
+    border-radius: 8px;
+  position: relative;
+  top: -30px;
+  }
+  
+  .news-btn {
+    font-size: 14px;
+    height: 32px;
     width: 96px;
     font-weight: 500;
     color: white;
-    border-radius: 7px;
-    background: #8C96A0;
-    margin-left: 500px;
-}
-              /* ,лошоошо */
-.news-second-card {
-    width: 590px;
-    height: 347px;
-    background: #30373F;
     border-radius: 6px;
-margin-top: -347px;  
-margin-left: 600px; 
- position: absolute;
-}
-.news-second-card-god-of-war {
-    color: #8856D9;
-    font-size: 10px;
-       font-size: 10px;
-    font-weight: 600;
-}
-.news-second-card-name {
-    font-weight: 600;
+    background: #8C96A0;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -30px;
+  }
+  
+  .slider-btn {
     position: absolute;
-    color: white;
-    font-size: 19px;
-    margin-left: 20px;
-    margin-top: 40px;
-}
-.news-second-card-img {
-    width: 278px;
-    height: 249px;
-    border-radius: 5px;
-}
-.news-second-card-date {
-}
-.news-second-card-text {
-    font-size: 12px;
-    color: #D9D9D9;
-    margin-top: 70px;
-    height: 208px;
-    width: 256px;
-    line-height: 17px;
-    font-weight: 400;
-    margin-left: 320px;
-}
-.news-second-card-btn {
-    font-size: 13px;
-    height: 30px;
-    width: 96px;
-    font-weight: 500;
-    color: white;
-    border-radius: 7px;
-    background: #8C96A0;
-}
-.news-third-card {
-    width: 590px;
-    height: 347px;
-    background: #30373F;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(100, 100, 100, 0.2);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
     border-radius: 6px;
-    margin-top: -300px;
-    margin-left: 1200px;
-}
-.news-third-card-god-of-war {
-    color: #8856D9;
-     color: white;
-    font-size: 10px;
-}
-.news-third-card-name {
-    color: white;
-    font-size: 19px;
-}
-.news-third-card-img {
-    width: 278px;
-    height: 249px;
-    border-radius: 5px;
-}
-.news-third-card-date {
-}
-.news-third-card-text {
-    font-size: 12px;
-    color: #D9D9D9;
-}
-.news-third-card-btn {
-    font-size: 13px;
-    height: 30px;
-    width: 96px;
-    font-weight: 500;
-    color: white;
-    border-radius: 7px;
+    padding: 8px;
+  }
+  
+  .slider-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .prev {
+    left: -40px;
+    width: 32px;
+    height: 32px;
     background: #8C96A0;
-}
-.news-fourth-card {
-    width: 615px;
-    height: 347px;
-    background: #30373F;
-    border-radius: 6px;
-}
-.news-fourth-card-god-of-war {
-    color: #8856D9;
-    font-size: 10px;
-}
-.news-fourth-card-name {
-    color: white;
-    font-size: 19px;
-}
-.news-fourth-card-img {
-    width: 278px;
-    height: 249px;
-    border-radius: 5px;
-}
-.news-fourth-card-date {
-    width: 615px;
-    height: 347px;
-    background: #30373F;
-    border-radius: 6px;
-}
-.news-fourth-card-text {
-    font-size: 12px;
-    color: #D9D9D9;
-}
-.news-fourth-card-btn {
-    font-size: 13px;
-    height: 30px;
-    width: 96px;
-    font-weight: 500;
-    color: white;
-    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .prev:hover{
+    background: #8856D9;
+
+  }
+  
+  .next {
+    width: 32px;
+    height: 32px;
     background: #8C96A0;
-}
-.news-fifth-card {
-    width: 615px;
-    height: 347px;
-    background: #30373F;
-    border-radius: 6px;
-}
-.news-fifth-card-god-of-war {
-    color: #8856D9;
-    font-size: 10px;
-}
-.news-fifth-card-name {
-    color: white;
-    font-size: 19px;
-}
-.news-fifth-card-img {
-    width: 278px;
-    height: 249px;
-    border-radius: 5px;
-}
-.news-fifth-card-date {
-}
-.news-fifth-card-text {
-    font-size: 12px;
-    color: #D9D9D9;
-}
-.news-fifth-card-btn {
-    font-size: 13px;
-    height: 30px;
-    width: 96px;
-    font-weight: 500;
-    color: white;
-    border-radius: 7px;
-    background: #8C96A0;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -40px;
+  }
+  .next:hover{
+    background: #8856D9;
+
+  }
+  
 
 /* нижче будуть стилі секції faq + footer (секція Міші) */
