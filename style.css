@@ -210,7 +210,7 @@ body {
   border-radius: 12px;
   margin-right: 200px;
   margin-top: 40px;
-  animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite; 
 }
 
 @keyframes float {
