@@ -61,10 +61,10 @@ modalClose.addEventListener('click', () => {
 
 // нижче буде код секції timer (щоб був таймер в реальному часі) (секція Олега)
 
-const timerDays = document.getElementById('modal-days');
-const timerHours = document.getElementById('modal-hours');
-const timerMinutes = document.getElementById('modal-minutes');
-const timerSeconds = document.getElementById('modal-seconds');
+const timerDays = document.getElementById('timer-days');
+const timerHours = document.getElementById('timer-hours');
+const timerMinutes = document.getElementById('timer-minutes');
+const timerSeconds = document.getElementById('timer-seconds');
 
 const timerDate = new Date('2025-05-20T00:00:00');
 
