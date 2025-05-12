@@ -135,14 +135,17 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .faq-container {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .faq-item {
   border-bottom: 2px solid #8d5af5;
   margin-bottom: 20px;
 }
+
 .faq-header {
   display: flex;
   justify-content: space-between;
@@ -152,6 +155,7 @@ body {
   font-size: 18px;
   padding: 15px 0;
   position: relative;
+  transition: color 0.3s;
 }
 .faq-toggle {
   display: flex;
@@ -163,18 +167,96 @@ body {
   height: 30px;
 
 }
-.faq-toggle svg {
-  pointer-events: none;
-
+.faq-item input:checked + .faq-header .faq-toggle svg {
+  transform: rotate(45deg);
 }
 .faq-content {
-  display: none;
-  padding: 10px 0 20px;
+  max-height: 0;
+  overflow: hidden;
   font-size: 16px;
   line-height: 1.6;
+  padding-right: 40px;
+}
+.faq-item input:checked + .faq-header + .faq-content {
+  max-height: 500px;
+  padding: 10px 0 20px;
+}
+footer {
+  background-color: #1C2023;
+  color: #aaa;
+  font-family: 'Roboto', sans-serif;
+  padding: 60px 0 40px;
+  font-size: 14px;
+  position: relative;
 }
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+}
 
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.footer-link:hover {
+  color: #8d5af5;
+}
+.footer-lang {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-weight: 400;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.footer-lang b {
+  color: #fff;
+  font-weight: 700;
+}
+.footer-info {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #bbb;
+  line-height: 1.6;
+}
+.footer-logo img {
+  display: block;
+  margin: 20px auto;
+  height: 30px;
+}
+.footer-year {
+  color: #ccc;
+  margin-top: 10px;
+}
+.footer-rights {
+  color: #999;
+  margin-top: 10px;
+}
+.footer-rights a {
+  color: #8d5af5;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-rights a:hover {
+  text-decoration: underline;
+}
 
 
 
