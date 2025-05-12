@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  flex-shrink: 0;
-  font-weight: normal;
-  font-size: 100%;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  color: inherit;
-  font-family: inherit;
-  list-style: none;
-  vertical-align: baseline;
-  background: none;
-  outline: none;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    font-weight: normal;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    list-style: none;
+    vertical-align: baseline;
+    background: none;
+    outline: none;
 }
 
 body {
@@ -302,108 +302,108 @@ body {
 /* нижче будуть стилі секції header (секція Назара) */
 
 .header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 48px 282px;
-  align-items: start;
-  background: url(assets/images/header-bg.jpg) no-repeat right/contain, #1C2023;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 48px 282px;
+    align-items: start;
+    background: url(assets/images/header-bg.jpg) no-repeat right/contain, #1C2023;
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .header-nav-burger {
-  width: 25px;
-  height: 16px;
-  cursor: pointer;
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
 }
 
 .header-nav-burger-icon {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .header-nav-ul {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    transition: .3s;
 
-  &.hidden {
-    transform: translateX(-100%);
-    opacity: 0;
-    pointer-events: none;
-  }
+    &.hidden {
+        transform: translateX(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .header-nav-ul-li {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .header-nav-ul-li-a {
-  font-size: 14px;
-  line-height: 27px;
-  color: #ffffff80;
-  transition: .3s;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff80;
+    transition: .3s;
 }
 
 .header-nav-ul-li-a:hover {
-  color: #8856d9;
+    color: #8856d9;
 }
 
 .header-nav-ul-li:last-child .header-nav-ul-li-a {
-  color: #ffffff;
-  position: relative;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
+    color: #ffffff;
+    position: relative;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    background: url(assets/icons/header-arrow-down.svg) no-repeat center center/contain;
-    right: -20px;
-  }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        background: url(assets/icons/header-arrow-down.svg) no-repeat center center/contain;
+        right: -20px;
+    }
 }
 
 .header-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 120px 0 186px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 120px 0 186px;
 }
 
 .header-hero-title {
-  font-size: 100px;
-  font-weight: 600;
-  color: #ffffff;
-  line-height: 100px;
-  padding-bottom: 26px;
+    font-size: 100px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 100px;
+    padding-bottom: 26px;
 }
 
 .header-hero-descr {
-  font-size: 18px;
-  line-height: 27px;
-  color: #a9c7c7;
-  width: 40%;
-  font-weight: 300;
-  padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #a9c7c7;
+    width: 40%;
+    font-weight: 300;
+    padding-bottom: 50px;
 }
 
 .header-hero-btn {
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: #8856d9;
-  border-radius: 6px;
-  padding: 12px 36px;
-  color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #8856d9;
+    border-radius: 6px;
+    padding: 12px 36px;
+    color: #ffffff;
 }
 
 /* нижче будуть стилі секції editions (секція Макара) */

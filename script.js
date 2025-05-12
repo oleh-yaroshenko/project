@@ -101,7 +101,7 @@ let headerBurger = document.querySelector(".header-nav-burger")
 let headerNav = document.querySelector(".header-nav-ul")
 
 headerBurger.addEventListener("click", () => {
-  headerNav.classList.toggle("hidden")
+    headerNav.classList.toggle("hidden")
 })
 
 // нижче буде код секції trailer (щоб відкривалася модалка при натисканні на кнопку з відео ютуб) (секція Міші)
@@ -207,26 +207,26 @@ const newsCardsPerView = 3;
 const newsTotalCards = newsCards.length;
 
 function newsUpdateSlider() {
-  const cardWidth = newsCards[0].offsetWidth + 20;
-  newsTrack.style.transform = `translateX(-${newsCurrentIndex * cardWidth}px)`;
+    const cardWidth = newsCards[0].offsetWidth + 20;
+    newsTrack.style.transform = `translateX(-${newsCurrentIndex * cardWidth}px)`;
 }
 
 newsNextBtn.addEventListener('click', () => {
-  if (newsCurrentIndex < newsTotalCards - newsCardsPerView) {
-    newsCurrentIndex++;
-  } else {
-    newsCurrentIndex = 0;
-  }
-  newsUpdateSlider();
+    if (newsCurrentIndex < newsTotalCards - newsCardsPerView) {
+        newsCurrentIndex++;
+    } else {
+        newsCurrentIndex = 0;
+    }
+    newsUpdateSlider();
 });
 
 newsPrevBtn.addEventListener('click', () => {
-  if (newsCurrentIndex > 0) {
-    newsCurrentIndex--;
-  } else {
-    newsCurrentIndex = newsTotalCards - newsCardsPerView - 2;
-  }
-  newsUpdateSlider();
+    if (newsCurrentIndex > 0) {
+        newsCurrentIndex--;
+    } else {
+        newsCurrentIndex = newsTotalCards - newsCardsPerView - 2;
+    }
+    newsUpdateSlider();
 });
 
 window.addEventListener('resize', newsUpdateSlider);
