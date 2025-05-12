@@ -7,50 +7,13 @@
 
 
 // нижче буде код секції header (щоб було бургер меню) (секція Назара)
-function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('open');
-  }  
-  
-  function buyNow() {
-    alert("Redirecting to purchase...");
-  }
 
-  //падаючий сніг на хедері
-  (function snow() {
-    const count = 50;
-    for (let i = 0; i < count; i++) {
-      const snowflake = document.createElement("span");
-      Object.assign(snowflake.style, {
-        position: "fixed",
-        top: `${Math.random() * -20}px`,
-        left: `${Math.random() * 100}vw`,
-        width: "6px",
-        height: "6px",
-        background: "white",
-        borderRadius: "50%",
-        opacity: Math.random(),
-        pointerEvents: "none",
-        zIndex: 999,
-        animation: `fall ${5 + Math.random() * 5}s linear infinite`,
-      });
-      snowflake.style.animationDelay = `${Math.random() * 5}s`;
-      document.body.appendChild(snowflake);
-    }
-  
-    const style = document.createElement("style");
-    style.textContent = `
-      @keyframes fall {
-        to {
-          transform: translateY(100vh);
-        }
-      }
-    `;
-    document.head.appendChild(style);
-  })();
-  
-  
+let headerBurger = document.querySelector(".header-nav-burger")
+let headerNav = document.querySelector(".header-nav-ul")
 
-
+headerBurger.addEventListener("click", () => {
+  headerNav.classList.toggle("hidden")
+})
 
 // нижче буде код секції trailer (щоб відкривалася модалка при натисканні на кнопку з відео ютуб) (секція Міші)
 
