@@ -8,7 +8,12 @@
 
 // нижче буде код секції header (щоб було бургер меню) (секція Назара)
 
+let headerBurger = document.querySelector(".header-nav-burger")
+let headerNav = document.querySelector(".header-nav-ul")
 
+headerBurger.addEventListener("click", () => {
+  headerNav.classList.toggle("hidden")
+})
 
 // нижче буде код секції trailer (щоб відкривалася модалка при натисканні на кнопку з відео ютуб) (секція Міші)
 
