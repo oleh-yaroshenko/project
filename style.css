@@ -27,11 +27,277 @@ body {
 
 /* нижче будуть стилі секції modal (секція Олега) */
 
+.modal-backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: hsla(206, 11%, 12%, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: .3s;
+    opacity: 1;
+    pointer-events: auto;
 
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal-form {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: url(assets/images/modal-bg.png) no-repeat center center/cover, #1C2023;
+    padding: 32px 32px 18px;
+    position: relative;
+}
+
+.modal-form-close {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.modal-form-close-img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-form-title {
+    text-align: center;
+    color: #8856d9;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.modal-form-subtitle {
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 8px 0 16px;
+}
+
+.modal-form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.modal-form-input-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.modal-form-input-field {
+    border-radius: 6px;
+    background: #30373f;
+    padding: 16px 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &::placeholder {
+        color: #d9d9d9;
+    }
+}
+
+.modal-form-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 16px 0;
+}
+
+.modal-form-wrapper-input {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.modal-form-wrapper-input-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.modal-form-wrapper-input-field {
+    border-radius: 6px;
+    background: #30373f;
+    padding: 16px 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &::placeholder {
+        color: #d9d9d9;
+    }
+}
+
+.modal-form-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0 8px;
+}
+
+.modal-form-check-input {
+    display: none;
+}
+
+.modal-form-check-fakebox {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: #30373f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.modal-form-check-input:checked+.modal-form-check-fakebox {
+    background: #8856d9;
+}
+
+.modal-form-check-input:checked+.modal-form-check-fakebox::after {
+    content: "✓";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.modal-form-check-span {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.modal-form-check-span-highlight {
+    color: #ff4136;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.modal-form-descr {
+    font-size: 10px;
+    color: #d9d9d9;
+}
+
+.modal-form-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    padding: 8px 0 18px;
+}
+
+.modal-form-price-span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.modal-form-price-amount {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.modal-form-btn {
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    background: #8856d9;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 /* нижче будуть стилі секції timer (секція Олега) */
 
+.timer {
+    position: absolute;
+    top: 36px;
+    right: 226px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.timer-title {
+    color: #8c96a0;
+}
+
+.timer-numbers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timer-numbers-span {
+    font-weight: 700;
+    font-size: 40px;
+    color: #a9c7c7;
+    position: relative;
+
+    &:nth-child(1)::after {
+        content: "D";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(2)::after {
+        content: "H";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(3)::after {
+        content: "M";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+
+    &:nth-child(4)::after {
+        content: "S";
+        position: absolute;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8c96a0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    }
+}
 
 /* нижче будуть стилі секції header (секція Назара) */
 
